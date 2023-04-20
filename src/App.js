@@ -30,7 +30,7 @@ function App() {
   }
 
   const handlePlay = () => {
-    setTime(100);
+    setTime(60);
 
     setCorrectWords(0);
     setIncorrectWords(0);
