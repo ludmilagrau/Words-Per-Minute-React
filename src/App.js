@@ -18,7 +18,10 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setWord(randomWord);
+    if(randomWord.length < 10) {
+      setWord(randomWord);
+    }
+    
 
     if(input === word) {
       setCorrectWords((correctWords) => correctWords + 1);
@@ -53,7 +56,7 @@ function App() {
     <div className="App">
       {time !== 0 ? (
       <div>
-        <div style={{textAlign: 'center', position: 'relative', bottom: '21px', display: 'flex', flexDirection: 'column'}}>
+        <div style={{textAlign: 'center', maxWidth: '100%', position: 'relative', bottom: '21px', display: 'flex', flexDirection: 'column'}}>
           <h1>{word}</h1>
           <h1 style={{fontSize: '30px'}}>{time}</h1>
         </div>

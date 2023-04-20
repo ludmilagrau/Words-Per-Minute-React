@@ -68,7 +68,7 @@ input {
 .results-card {
   background-color: #D9D0DE;
   height: 275px;
-  width: 200px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,7 +78,7 @@ input {
   -moz-box-shadow: 6px 5px 5px -1px rgba(0,0,0,0.5);
   position: absolute;
   bottom: 159px;
-  left: 464px;
+  left: 640px;
 
 }
 
